@@ -1,0 +1,14 @@
+{
+  "name": "bun-tree-shake-repro",
+  "module": "src/index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+      "repro": "bun build src/entrypoint1.ts src/entrypoint2.ts --outdir dist"
+  }
+}
